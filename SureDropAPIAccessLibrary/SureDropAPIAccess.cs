@@ -199,14 +199,14 @@ namespace SureDropAPIAccessLibrary
                     var jsonObject = new
                     {
                         navbarPinned = navbarPinned,
-                        username = "crispyjones",
+                        username = username,
                         FailedLoginAttempt = new
                         {
                             failed = failed,
                             maxRetries = maxRetries
                         },
                         shadow = "",
-                        navbarCollapsed = navbarCollapsed, // False
+                        navbarCollapsed = navbarCollapsed,
                     };
 
                     string json = JsonConvert.SerializeObject(jsonObject);
@@ -469,7 +469,7 @@ namespace SureDropAPIAccessLibrary
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    //_token= GetSessionToken();
+                    
 
                     string restURL = $"{hostUrl}/templates?prefix={company}&username={username}&token={token}";
 

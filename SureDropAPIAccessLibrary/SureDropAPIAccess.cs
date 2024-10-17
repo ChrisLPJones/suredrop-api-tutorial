@@ -206,7 +206,7 @@ namespace SureDropAPIAccessLibrary
                             maxRetries = maxRetries
                         },
                         shadow = "",
-                        navbarCollapsed = navbarCollapsed, // False
+                        navbarCollapsed = navbarCollapsed,
                     };
 
                     string json = JsonConvert.SerializeObject(jsonObject);

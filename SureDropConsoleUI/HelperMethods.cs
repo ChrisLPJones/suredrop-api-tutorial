@@ -672,12 +672,12 @@ namespace SureDropConsoleUI
                 if (key == ConsoleKey.Backspace && password.Length > 0)
                 {
                     password = password.Substring(0, password.Length - 1);
-                    Console.Write("\b \b"); // Remove the last character from the console.
+                    Console.Write("\b \b");
                 }
                 else if (!char.IsControl(keyInfo.KeyChar))
                 {
                     password += keyInfo.KeyChar;
-                    Console.Write("*"); // Mask the
+                    Console.Write("*");
                 }
             } while (key != ConsoleKey.Enter);
 
